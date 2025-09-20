@@ -1,0 +1,24 @@
+{
+  "name": "npm-mermaid",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "only build": "vite build",
+    "build": "vite build && uv run --no-project scripts/builder.py",
+    "ts check": "vue-tsc -b",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "mermaid": "^11.6.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vue-tsc": "^2.2.8"
+  }
+}
