@@ -1,0 +1,17 @@
+name: "Main Branch Playwright Cache"
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 每 6 天 UTC 时间 0 点执行一次
+    # GitHub cron 最大精度是天，所以我们只能用每天触发一次，然后控制间隔。
+    - cron: '0 0 */6 * *'  
+
+jobs:
+  main-playwright-cache:
+    strategy:
+      matrix:
+        python-version: ['3.9','3.13']
+    uses: instaui-python/org-ci-config/.github/workflows/main-playwright-cache.yml@main
+    with:
+      python-version: ${{ matrix.python-version }}

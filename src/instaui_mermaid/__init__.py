@@ -1,3 +1,7 @@
-__all__ = ["mermaid"]
+__all__ = ["Mermaid", "set_mermaid_config", "NodeClickConfigBuilder"]
 
-from ._mermaid import Mermaid as mermaid
+from ._mermaid import (
+    Mermaid,
+    set_mermaid_config,
+    NodeClickConfigBuilder,
+)
