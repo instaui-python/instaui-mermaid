@@ -18,7 +18,7 @@ export default defineConfig({
     // sourcemap: "inline",
 
     rollupOptions: {
-      external: ["vue", "mermaid"],
+      external: ["vue", "mermaid", "instaui"],
       // output: [],
     },
   },

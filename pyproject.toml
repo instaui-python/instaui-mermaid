@@ -11,7 +11,7 @@ authors = [
 
 requires-python = ">=3.10,<3.14"
 dependencies = [
-    "instaui>=0.8.4",
+    "instaui>=0.8.5",
 ]
 
 [dependency-groups]
@@ -55,8 +55,3 @@ include = [
 
 [tool.hatch.build.force-include]
 "src/instaui_mermaid/static" = "src/instaui_mermaid/static"
-
-[tool.uv.sources]
-instaui = { path = "../instaui", editable = true }
-
-
