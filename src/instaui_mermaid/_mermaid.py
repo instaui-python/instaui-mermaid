@@ -8,14 +8,14 @@ from instaui.internal.ui.ref_base import RefBase
 
 _STATIC_DIR = Path(__file__).parent / "static"
 _MERMAID_JS_FILE = _STATIC_DIR / "mermaid.esm.min.mjs"
-
+_INSTAUI_MERMAID_JS_FILE = _STATIC_DIR / "instaui-mermaid.js"
 
 _IMPORT_MAPS = {"mermaid": _MERMAID_JS_FILE}
 
 
 class Mermaid(
     custom.element,
-    esm="./instaui-mermaid.js",
+    esm=_INSTAUI_MERMAID_JS_FILE,
     externals=_IMPORT_MAPS,
 ):
     """
