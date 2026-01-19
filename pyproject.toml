@@ -1,6 +1,6 @@
 [project]
 name = "instaui-mermaid"
-version = "0.1.2"
+version = "0.2.0"
 description = "A Python package for generating mermaid diagrams in InstaUI."
 keywords = ["ui", "gui", "web", "instaui", "mermaid"]
 readme = "README.md"

@@ -528,7 +528,7 @@ web = [
 
 [[package]]
 name = "instaui-mermaid"
-version = "0.1.2"
+version = "0.2.0"
 source = { editable = "." }
 dependencies = [
     { name = "instaui" },
@@ -536,6 +536,7 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "fastapi", extra = ["standard"] },
     { name = "instaui", extra = ["web"] },
     { name = "playwright" },
     { name = "pytest" },
@@ -543,6 +544,7 @@ dev = [
     { name = "pytest-html" },
     { name = "pytest-playwright" },
     { name = "ruff" },
+    { name = "uvicorn" },
 ]
 git = [
     { name = "pre-commit" },
@@ -559,12 +561,17 @@ test = [
     { name = "pytest-asyncio" },
     { name = "pytest-html" },
 ]
+web = [
+    { name = "fastapi", extra = ["standard"] },
+    { name = "uvicorn" },
+]
 
 [package.metadata]
 requires-dist = [{ name = "instaui", specifier = ">=0.8.5" }]
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "fastapi", extras = ["standard"], specifier = ">=0.115.12" },
     { name = "instaui", extras = ["web"] },
     { name = "playwright", specifier = "==1.57.0" },
     { name = "pytest", specifier = ">=8.3.5" },
@@ -572,6 +579,7 @@ dev = [
     { name = "pytest-html", specifier = ">=4.1.1" },
     { name = "pytest-playwright", specifier = ">=0.7.1" },
     { name = "ruff", specifier = "==0.12.2" },
+    { name = "uvicorn", specifier = ">=0.33.0" },
 ]
 git = [{ name = "pre-commit", specifier = ">=3.5.0" }]
 lint = [{ name = "ruff", specifier = "==0.12.2" }]
@@ -583,6 +591,10 @@ test = [
     { name = "pytest", specifier = ">=8.3.5" },
     { name = "pytest-asyncio", specifier = ">=0.24.0" },
     { name = "pytest-html", specifier = ">=4.1.1" },
+]
+web = [
+    { name = "fastapi", extras = ["standard"], specifier = ">=0.115.12" },
+    { name = "uvicorn", specifier = ">=0.33.0" },
 ]
 
 [[package]]
