@@ -15,7 +15,7 @@ export default defineConfig({
       fileName: (_, entryName) => `${entryName}.js`,
       formats: ["es"],
     },
-    // sourcemap: true,
+    // sourcemap: "inline",
 
     rollupOptions: {
       external: ["vue", "mermaid"],

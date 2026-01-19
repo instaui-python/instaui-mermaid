@@ -7,7 +7,7 @@ NODE_MERMAID_DIST_PATH = (
 )
 DIST_PATH = Path(__file__).parent.joinpath("../dist").resolve()
 
-PY_DIR = Path(__file__).parent.joinpath("../../src/mermaid").resolve()
+PY_DIR = Path(__file__).parent.joinpath("../../src/instaui_mermaid").resolve()
 STATIC_PATH = PY_DIR.joinpath("static").resolve()
 CHUNKS_DIR = STATIC_PATH / "chunks" / "mermaid.esm.min"
 
