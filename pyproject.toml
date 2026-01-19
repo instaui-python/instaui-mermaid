@@ -17,6 +17,7 @@ dependencies = [
 [dependency-groups]
 dev = [
     {include-group = "test"},
+    {include-group = "web"},
     {include-group = "playwright"},
     {include-group = "lint"},
     "instaui[web]",
@@ -26,6 +27,11 @@ test = [
     "pytest>=8.3.5",
     "pytest-asyncio>=0.24.0",
     "pytest-html>=4.1.1"
+]
+
+web = [
+    "fastapi[standard]>=0.115.12",
+    "uvicorn>=0.33.0",
 ]
 
 playwright = [
